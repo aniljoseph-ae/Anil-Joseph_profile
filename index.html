@@ -42,7 +42,7 @@
 
 		<h1>Anil Joseph</h1>
 
-		<h2> - <span>Aerospace Engineer</span> - </h2>
+		<h2> - <span>AEROSPACE ENGINEER</span> - </h2>
 
 		<!-- Navigation -->
 		<div class="navigation">
@@ -524,10 +524,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- //Resume -->
-<!-- TRAINING AND CERTIFICATIONS SESSION EXIT-->
 
 
+
+	<!-- TRAINING AND CERTIFICATIONS SESSION EXIT-->
 
 	<!-- Portfolio -->
 
@@ -652,7 +652,6 @@
 <!-- PORTFOLIO SECTION : ENDS HERE -->
 
 
-
 	<!-- Clients -->
 	<div class="agileinfosclients" id="agileinfosclients">
 		<div class="container">
@@ -687,8 +686,6 @@
 				</div>
 				
 			</div>
-			<!-- //Screen-Gallery-Carousel -->
-
 		</div>
 	</div>
 	<!-- Skills -->
@@ -810,7 +807,7 @@
 					$('.filtr-item a').Chocolat();
 				});
 			</script>
-		<!-- //PopUp-Box-JavaScript -->
+		<!-- PopUp-Box-JavaScript -->
 
 		<!-- Owl-Carousel-JavaScript -->
 			<script src="js/owl.carousel.js"></script>
@@ -854,6 +851,29 @@
 				});
 			</script>
 		<!-- //Smooth-Scrolling-JavaScript -->
+
+		<!-- form validation -->
+		<script>
+			function validateForm() {
+				var name = document.forms["contactForm"]["Name"].value;
+				var email = document.forms["contactForm"]["Email"].value;
+				var phoneNumber = document.forms["contactForm"]["PhoneNumber"].value;
+				var message = document.forms["contactForm"]["Message"].value;
+		
+				if (name == "" || email == "" || phoneNumber == "" || message == "") {
+					alert("All fields must be filled out");
+					return false;
+				}
+		
+				// You can add more specific validations for email, phone number, etc.
+		
+				return true;
+			}
+		</script>
+
+		<!-- form validation -->
+
+
 
 	<!-- //Custom-JavaScript-File-Links -->
 

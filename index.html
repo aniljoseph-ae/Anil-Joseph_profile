@@ -869,21 +869,40 @@
 		<!-- form validation -->
 	<script>
 		function validateForm() {
-			var name = document.forms["contactForm"]["Name"].value;
-			var email = document.forms["contactForm"]["Email"].value;
-			var phoneNumber = document.forms["contactForm"]["PhoneNumber"].value;
-			var message = document.forms["contactForm"]["Message"].value;
-		
-			if (name == "" || email == "" || phoneNumber == "" || message == "") {
-				alert("All fields must be filled out");
-				return false;
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var phoneNumber = document.getElementById("phoneNumber").value;
+			var message = document.getElementById("message").value;
+	  
+			// Validate Name
+			if (name.trim() === "") {
+			  alert("Please enter your name.");
+			  return false;
 			}
-		
-				// You can add more specific validations for email, phone number, etc.
-		
+	  
+			// Validate Email
+			var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (!email.match(emailPattern)) {
+			  alert("Please enter a valid email address.");
+			  return false;
+			}
+	  
+			// Validate Phone Number (Allow only numeric characters)
+			var phoneNumberPattern = /^\d+$/;
+			if (!phoneNumber.match(phoneNumberPattern)) {
+			  alert("Please enter a valid phone number (numeric characters only).");
+			  return false;
+			}
+	  
+			// Validate Message
+			if (message.trim() === "") {
+			  alert("Please enter your message.");
+			  return false;
+			}
+	  
 			return true;
-		}
-		</script>
+		  }
+	</script>
 
 		<!-- form validation -->
 

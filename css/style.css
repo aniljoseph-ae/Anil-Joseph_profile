@@ -412,8 +412,8 @@ a:focus, a:hover {
 
 	.resp-tab-active {
 		text-shadow: none;
-		background-color: #607D8B;
-		border-bottom: 1px solid #607d8b;
+		background-color: #426779;
+		border-bottom: 1px solid #426779;
 	}
 
 	.resp-tab-active span {

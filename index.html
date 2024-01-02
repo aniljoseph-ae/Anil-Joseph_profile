@@ -4,38 +4,39 @@
 <!-- Head -->
 <head>
 
-	<title>Anil Joseph</title>
+<title>Anil Joseph</title>
 
-	<!-- Meta-Tags -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="keywords" content="Opulent a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
-	<!-- Meta-Tags ends her-->
+<!-- Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="Opulent a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta-Tags ends her-->
 
-	<!-- Custom-Stylesheet-Links -->
-	<!-- Bootstrap-CSS --> 	<link rel="stylesheet" href="css/bootstrap.min.css"		type="text/css" media="all">
-	<!-- Index-Page-CSS --> <link rel="stylesheet" href="css/style.css" 			type="text/css" media="all">
-	<!-- FontAwesome-CSS --><link rel="stylesheet" href="css/font-awesome.min.css"	type="text/css" media="all">
-	<!-- PopUp-Box-CSS -->	<link rel="stylesheet" href="css/chocolat.css"			type="text/css" media="all">
-	<!-- OwlCarousel-CSS --><link rel="stylesheet" href="css/owl.carousel.css"		type="text/css" media="all">
-	<!-- //Custom-Stylesheet-Links -->
+<!-- Custom-Stylesheet-Links -->
+<!-- Bootstrap-CSS --> 	<link rel="stylesheet" href="css/bootstrap.min.css"		type="text/css" media="all">
+<!-- Index-Page-CSS --> <link rel="stylesheet" href="css/style.css" 			type="text/css" media="all">
+<!-- FontAwesome-CSS --><link rel="stylesheet" href="css/font-awesome.min.css"	type="text/css" media="all">
+<!-- PopUp-Box-CSS -->	<link rel="stylesheet" href="css/chocolat.css"			type="text/css" media="all">
+<!-- OwlCarousel-CSS --><link rel="stylesheet" href="css/owl.carousel.css"		type="text/css" media="all">
+<!-- //Custom-Stylesheet-Links -->
 
-	<!-- Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css" media="all" async>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" type="text/css" media="all" async>
-
-
-	<!-- Fonts ends her-->
+<!-- Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css" media="all" async>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" type="text/css" media="all" async>
 
 
-	<!-- <script>
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.href = 'css/font-awesome.min.css';
-		link.type = 'text/css';
-		link.media = 'all';
-		document.head.appendChild(link);
-	</script> -->
+<!-- Fonts ends her-->
+
+
+<script>
+	var link = document.createElement('link');
+	link.rel = 'stylesheet';
+	link.href = 'css/font-awesome.min.css';
+	link.type = 'text/css';
+	link.media = 'all';
+	document.head.appendChild(link);
+</script>
 
 </head>
 <!-- Head ends here-->
@@ -752,12 +753,6 @@
 
 
 	<!-- Custom-JavaScript-File-Links -->
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-
-
-	<script>
-		var link=document.createElement("link");link.rel="stylesheet",link.href="css/font-awesome.min.css",link.type="text/css",link.media="all",document.body.appendChild(link);
-	</script>
 
 	<!-- Default-JavaScript --> 
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
@@ -767,17 +762,26 @@
 	<!-- Horizontal-Tabs-JavaScript -->
 	<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
 			<script type="text/javascript">
-				$(document).ready (function () {$('#horizontalTab').easyResponsiveTabs({type: 'default',width: 'auto',fit: true,});});
-			</script>
+				$(document).ready(function () {
+					$('#horizontalTab').easyResponsiveTabs({
+						type: 'default',
+						width: 'auto',
+						fit: true,
+					});
+				});</script>
 	<!-- Horizontal-Tabs-JavaScript -->
 
 		<!-- Stats-Number-Scroller-Animation-JavaScript -->
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/counterup.min.js"></script>
-
+	<script src="js/waypoints.min.js"></script> 
+	<script src="js/counterup.min.js"></script> 
 	<script>
-		jQuery(document).ready(function(e){e(".counter").counterUp({delay:10,time:1e3})});
-		</script>
+		jQuery(document).ready(function( $ ) {
+			$('.counter').counterUp({
+				delay: 10,
+				time: 1000,
+			});
+		});
+		</script>		
 		<!-- //Stats-Number-Scroller-Animation-JavaScript -->
 
 		<!-- Progressive-Bars-JavaScript -->
@@ -788,33 +792,65 @@
 			
 		<!-- Show-More-JavaScript -->
 	<script>
-		$(document).ready(function(){size_li=$("#myList li").size(),x=1,$("#myList li:lt("+x+")").show(),$("#loadMore").click(function(){x=x+1<=size_li?x+1:size_li,$("#myList li:lt("+x+")").show()}),$("#showLess").click(function(){x=x-1<0?1:x-1,$("#myList li").not(":lt("+x+")").hide()})});
+			$(document).ready(function () {
+				size_li = $("#myList li").size();
+				x=1;
+				$('#myList li:lt('+x+')').show();
+				$('#loadMore').click(function () {
+					x= (x+1 <= size_li) ? x+1 : size_li;
+					$('#myList li:lt('+x+')').show();
+				});
+				$('#showLess').click(function () {
+					x=(x-1<0) ? 1 : x-1;
+					$('#myList li').not(':lt('+x+')').hide();
+				});
+			});
 		</script>
 		<!-- Tabs-JavaScript -->
 			<script src="js/jquery.filterizr.js"></script>
 			<script src="js/controls.js"></script>
 			<script type="text/javascript">
-				$(function(){$(".filtr-container").filterizr()});
+				$(function() {
+					$('.filtr-container').filterizr();
+				});
 			</script>
 		<!-- //Tabs-JavaScript -->
 
 		<!-- PopUp-Box-JavaScript -->
 			<script src="js/jquery.chocolat.js"></script>
 			<script type="text/javascript">
-				$(function(){$(".filtr-item a").Chocolat()});
+				$(function() {
+					$('.filtr-item a').Chocolat();
+				});
 			</script>
 		<!-- PopUp-Box-JavaScript -->
 
 		<!-- Owl-Carousel-JavaScript -->
 			<script src="js/owl.carousel.js"></script>
 			<script>
-				$(document).ready(function(){$("#owl-demo").owlCarousel({items:8,lazyLoad:!0,autoPlay:!0,speed:900,pagination:!1})});
+				$(document).ready(function() {
+					$("#owl-demo").owlCarousel ({
+						items : 8,
+						lazyLoad : true,
+						autoPlay : true,
+						speed: 900,
+						pagination : false,
+					});
+				});
 			</script>
 		<!-- //Owl-Carousel-JavaScript -->
 
 		<!-- Slide-To-Top JavaScript -->
 			<script type="text/javascript">
-				$(document).ready(function(){$().UItoTop({easingType:"easeOutQuart"})});
+				$(document).ready(function() {
+					var defaults = {
+						containerID: 'toTop',
+						containerHoverID: 'toTopHover',
+						scrollSpeed: 100,
+						easingType: 'linear',
+					};
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
 			</script>
 			<a href="#" id="toTop" class="stuoyal3w stieliga" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
 		<!-- //Slide-To-Top JavaScript -->
@@ -823,13 +859,51 @@
 			<script type="text/javascript" src="js/move-top.js"></script>
 			<script type="text/javascript" src="js/easing.js"></script>
 			<script type="text/javascript">
-				jQuery(document).ready(function(e){e(".scroll").click(function(t){t.preventDefault(),e("html,body").animate({scrollTop:e(this.hash).offset().top},1e3)})});
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
 			</script>
 		<!-- //Smooth-Scrolling-JavaScript -->
 
 		<!-- form validation -->
 	<script>
-		function validateForm(){var e=document.getElementById("name").value,a=document.getElementById("email").value,t=document.getElementById("phoneNumber").value,r=document.getElementById("message").value;if(""===e.trim())return alert("Please enter your name."),!1;if(!a.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/))return alert("Please enter a valid email address."),!1;return t.match(/^\d+$/)?""!==r.trim()||(alert("Please enter your message."),!1):(alert("Please enter a valid phone number (numeric characters only)."),!1)}
+		function validateForm() {
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var phoneNumber = document.getElementById("phoneNumber").value;
+			var message = document.getElementById("message").value;
+	  
+			// Validate Name
+			if (name.trim() === "") {
+			  alert("Please enter your name.");
+			  return false;
+			}
+	  
+			// Validate Email
+			var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (!email.match(emailPattern)) {
+			  alert("Please enter a valid email address.");
+			  return false;
+			}
+	  
+			// Validate Phone Number (Allow only numeric characters)
+			var phoneNumberPattern = /^\d+$/;
+			if (!phoneNumber.match(phoneNumberPattern)) {
+			  alert("Please enter a valid phone number (numeric characters only).");
+			  return false;
+			}
+	  
+			// Validate Message
+			if (message.trim() === "") {
+			  alert("Please enter your message.");
+			  return false;
+			}
+	  
+			return true;
+		  }
 	</script>
 
 		<!-- form validation -->
